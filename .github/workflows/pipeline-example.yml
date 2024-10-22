@@ -7,3 +7,14 @@ on:
   pull_request:
     branches:
       - devops
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Show simple message
+        shell: bash
+        run: echo "Hello World!"  
