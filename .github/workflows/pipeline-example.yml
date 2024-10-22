@@ -1,0 +1,9 @@
+name: Build Example Pipeline
+
+on:
+  push:
+    branches:
+      - devops
+  pull_request:
+    branches:
+      - devops
