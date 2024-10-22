@@ -10,9 +10,8 @@ on:
 
 jobs:
   build-docker:
-  runs-on: ubuntu-latest
-
-  steps:
-  - name: deploy
-    uses: rafaelgoncalvesmatos/DevopsPipelineTemplate/.github/workflows/infra-deploy.yml@devops
+    runs-on: ubuntu-latest
+    steps:
+    - name: deploy
+      uses: rafaelgoncalvesmatos/DevopsPipelineTemplate/.github/workflows/infra-deploy.yml@devops
       
