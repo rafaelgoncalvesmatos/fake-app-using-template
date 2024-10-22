@@ -9,11 +9,11 @@ on:
       - devops
 
 jobs:
-  build:
+  checkouts: 
+    - name: Show simple message
+      uses: rafaelgoncalvesmatos/DevOpsPipelineTemplates/.github/workflows/infra-deploy.yml@devops
     # runs-on: ubuntu-latest
-    checkouts:
-      - name: Show simple message
-        uses: rafaelgoncalvesmatos/DevOpsPipelineTemplates/.github/workflows/infra-deploy.yml@devops
+      -
       # - name: Checkout
       #   uses: actions/checkout@v2
 
