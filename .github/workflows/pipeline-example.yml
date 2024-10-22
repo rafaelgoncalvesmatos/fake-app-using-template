@@ -10,14 +10,14 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
+    # runs-on: ubuntu-latest
+    checkouts:
       - name: Show simple message
-        shell: bash
-        run: echo "Hello World!"  
-      
-      - name: Show simple message in another repository
         uses: rafaelgoncalvesmatos/DevOpsPipelineTemplates/.github/workflows/infra-deploy.yml@devops
+      # - name: Checkout
+      #   uses: actions/checkout@v2
+
+      # - name: Show simple message
+      #   shell: bash
+      #   run: echo "Hello World!"  
+      
