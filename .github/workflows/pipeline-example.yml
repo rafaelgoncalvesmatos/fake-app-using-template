@@ -9,5 +9,3 @@ on:
 jobs:
   checkout:
     uses: rafaelgoncalvesmatos/DevOpsPipelineTemplates/.github/workflows/infra-deploy.yml@devops
-    with:
-      jdk_version: 11
