@@ -1,17 +1,10 @@
-name: Build Example Pipeline
+name: HelloWorld 
 
 on:
-  push:
-    branches:
-      - devops
-  pull_request:
-    branches:
-      - devops
+  workflow_dispatch:
 
 jobs:
-  build-docker:
-    runs-on: ubuntu-latest
-    steps:
-    - name: deploy
-      uses: rafaelgoncalvesmatos/DevopsPipelineTemplate/.github/workflows/infra-deploy.yml@devops
-      
+  checkout:
+    uses: rafaelgoncalvesmatos/DevopsPipelineTemplate/.github/workflows/infra-deploy.yml@devops
+    with:
+      jdk_version: 11
