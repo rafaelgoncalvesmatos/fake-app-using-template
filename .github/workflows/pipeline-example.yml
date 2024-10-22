@@ -1,0 +1,7 @@
+name: [ Branch Devops ] Build example using templates on the Github actions
+
+on:
+  push:
+    branches: [ "devops" ]
+    pull_request:
+      branches: [ "devops" ]
