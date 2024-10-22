@@ -20,4 +20,4 @@ jobs:
         run: echo "Hello World!"  
       
       - name: Show simple message in another repository
-        uses: rafaelgoncalvesmatos/DevOpsPipelineTemplates/.github/workflows/infra-deploy.yml
+        uses: rafaelgoncalvesmatos/DevOpsPipelineTemplates/.github/workflows/infra-deploy.yml@devops
