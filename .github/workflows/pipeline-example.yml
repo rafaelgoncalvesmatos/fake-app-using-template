@@ -8,4 +8,3 @@ on:
 jobs:
   checkout:
     uses: rafaelgoncalvesmatos/DevOpsPipelineTemplates/.github/workflows/infra-deploy.yml@devops
-#
