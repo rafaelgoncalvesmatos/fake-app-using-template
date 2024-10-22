@@ -9,15 +9,10 @@ on:
       - devops
 
 jobs:
-  checkouts: 
-    - name: Show simple message
-      uses: rafaelgoncalvesmatos/DevOpsPipelineTemplates/.github/workflows/infra-deploy.yml@devops
-    # runs-on: ubuntu-latest
-      -
-      # - name: Checkout
-      #   uses: actions/checkout@v2
+  build-docker:
+  runs-on: ubuntu-latest
 
-      # - name: Show simple message
-      #   shell: bash
-      #   run: echo "Hello World!"  
+  steps:
+  - name: deploy
+    uses: rafaelgoncalvesmatos/DevopsPipelineTemplate/.github/workflows/infra-deploy.yml@devops
       
