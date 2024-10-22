@@ -1,7 +1,20 @@
-name: [ Branch Devops ] Build example using templates on the Github actions
+name: Build Example Pipeline
 
 on:
   push:
-    branches: [ "devops" ]
-    pull_request:
-      branches: [ "devops" ]
+    branches:
+      - devops
+  pull_request:
+    branches:
+      - devops
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Show simple message
+        shell: bash
+        run: echo "Hello World!"  
