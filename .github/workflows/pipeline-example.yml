@@ -2,6 +2,9 @@ name: HelloWorld
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - devops
 
 jobs:
   checkout:
