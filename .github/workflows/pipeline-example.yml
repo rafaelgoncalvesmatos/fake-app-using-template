@@ -1,4 +1,9 @@
-name: HelloWorld 
+name: HelloWorld
+
+inputs:
+  name:
+    description: 'Your name'
+    required: true
 
 on:
   workflow_dispatch:
@@ -8,4 +13,5 @@ on:
 jobs:
   checkout:
     uses: rafaelgoncalvesmatos/DevOpsPipelineTemplates/.github/workflows/infra-deploy.yml@devops
-# 
+    with:
+      name: ${{ inputs.name }}
