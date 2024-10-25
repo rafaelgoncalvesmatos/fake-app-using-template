@@ -10,8 +10,9 @@ on:
   push:
     branches:
       - devops
+      
 jobs:
   checkout:
-    uses: rafaelgoncalvesmatos/DevOpsPipelineTemplates/.github/workflows/infra-deploy.yml@devops
+    uses: .github/workflows/infra-deploy.yml@devops
     with:
-      name: ${{ inputs.name }}
+      name: ${{ inputs.name }}  
